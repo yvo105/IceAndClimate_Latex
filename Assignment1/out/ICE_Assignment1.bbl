@@ -16,5 +16,322 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{ynt/apasortcite//global/global/global}
+    \entry{KuipersMunneke.2012}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=31c19892e17a655d6fa971d44a7bda1c}{%
+           family={{Kuipers Munneke}},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=743e38879b341649d1cba164c3f16579}{%
+           family={{van den Broeke}},
+           familyi={v\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e97a550c410913dd2078ca3e5970917d}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01cbb46e42e6944d5405357c9e12a92e}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8f5fbe82790a079099ae76152823921}{%
+           family={Reijmer},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7f74d801c2cdb3a117bfdb7b61b9adce}
+      \strng{fullhash}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{fullhashraw}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{bibnamehash}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{authorbibnamehash}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{authornamehash}{7f74d801c2cdb3a117bfdb7b61b9adce}
+      \strng{authorfullhash}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{authorfullhashraw}{96b09f488e180a5b744e1434de9dafdd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{<}strong class={"}journal-contentHeaderColor{"}{>}Abstract.{<}/strong{>} Data collected by two automatic weather stations (AWS) on the Larsen C ice shelf, Antarctica, between 22 January 2009 and 1 February 2011 are analyzed and used as input for a model that computes the surface energy budget (SEB), which includes melt energy. The two AWSs are separated by about 70 km in the north--south direction, and both the near-surface meteorology and the SEB show similarities, although small differences in all components (most notably the melt flux) can be seen. The impact of subsurface absorption of shortwave radiation on melt and snow temperature is significant, and discussed. In winter, longwave cooling of the surface is entirely compensated by a downward turbulent transport of sensible heat. In summer, the positive net radiative flux is compensated by melt, and quite frequently by upward turbulent diffusion of heat and moisture, leading to sublimation and weak convection over the ice shelf. The month of November 2010 is highlighted, when strong westerly flow over the Antarctic Peninsula led to a dry and warm föhn wind over the ice shelf, resulting in warm and sunny conditions. Under these conditions the increase in shortwave and sensible heat fluxes is larger than the decrease of net longwave and latent heat fluxes, providing energy for significant melt.{<}/p{>}}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{number}{2}
+      \field{title}{Near-surface climate and surface energy budget of Larsen C ice shelf, Antarctic Peninsula}
+      \field{volume}{6}
+      \field{year}{2012}
+      \field{pages}{353\bibrangedash 363}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.5194/tc-6-353-2012
+      \endverb
+      \verb{file}
+      \verb Kuipers Munneke, van den Broeke et al 2012 - Near-surface climate and surface energy:Attachments/Kuipers Munneke, van den Broeke et al 2012 - Near-surface climate and surface energy.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://tc.copernicus.org/articles/6/353/2012/
+      \endverb
+      \verb{url}
+      \verb https://tc.copernicus.org/articles/6/353/2012/
+      \endverb
+    \endentry
+    \entry{Pu.2021}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=1c6cae77d6e3d0d19b2d67425bd72f81}{%
+           family={Pu},
+           familyi={P\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5afd05205780d496adde6496e5c34ea}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Jiecan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0bea797865d202655551669cc78935c2}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Dongyou},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e16370a92edf22642bc96cb7675a8fcc}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Tenglong},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f532a47a63f16b583c4455dea6a8018e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66b4fa213b3eb843134c0bc7565fa964}{%
+           family={Xing},
+           familyi={X\bibinitperiod},
+           given={Yuxuan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d28cb9bb97e2d212e63c4ffa7ad4e552}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d3e23852937fa39b0e34246c4ecd1d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ffdd9b80ca98bb51efa4dd08b33302b8}
+      \strng{fullhash}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{fullhashraw}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{bibnamehash}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{authorbibnamehash}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{authornamehash}{ffdd9b80ca98bb51efa4dd08b33302b8}
+      \strng{authorfullhash}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{authorfullhashraw}{ac8795ebaed64865ad5dae97c918a75e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Wildfire events have recently shown a rapid increase in frequency and scale due to the warmer present-day climate; however, their potential effects on the cryosphere are difficult to assess. Catastrophic wildfires in Australia during 2019--2020 emitted large amounts of light-absorbing particles (LAPs) to the atmosphere. Satellite observations indicate that these LAPs caused unprecedented snow-darkening of glaciers in New Zealand through long-range transport and deposition, with their effects lasting for up to three months in January--March 2020, influencing {>}90{\%} of total glacier/snow and leading to a mean broadband snow-reflectance reduction of 0.08 $\pm$ 0.03. This snow darkening accelerated snowmelt by {\~}0.41 $\pm$ 0.2~cm day--1 during the southern summer, equivalent to that caused by a {\~}1.8°C increase in air temperature. This indicates the significant impact of the 2019--2020 Australian wildfires on the hydrologic cycle in New Zealand, exceeding that of the local climate warming of {\~}1.5°C since the preindustrial period. Wildfire-induced snow darkening is not limited to New Zealand. Future projections of wildfire incidence indicate widespread effects of snow darkening on the global cryosphere.}
+      \field{issn}{2667-3258}
+      \field{journaltitle}{Fundamental Research}
+      \field{number}{3}
+      \field{title}{Unprecedented snow darkening and melting in New Zealand due to 2019--2020 Australian wildfires}
+      \field{volume}{1}
+      \field{year}{2021}
+      \field{pages}{224\bibrangedash 231}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.fmre.2021.04.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2667325821000601
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2667325821000601
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{ynt/global//global/global/global}
+    \entry{KuipersMunneke.2012}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=31c19892e17a655d6fa971d44a7bda1c}{%
+           family={{Kuipers Munneke}},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=743e38879b341649d1cba164c3f16579}{%
+           family={{van den Broeke}},
+           familyi={v\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e97a550c410913dd2078ca3e5970917d}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01cbb46e42e6944d5405357c9e12a92e}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8f5fbe82790a079099ae76152823921}{%
+           family={Reijmer},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7f74d801c2cdb3a117bfdb7b61b9adce}
+      \strng{fullhash}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{fullhashraw}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{bibnamehash}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{authorbibnamehash}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{authornamehash}{7f74d801c2cdb3a117bfdb7b61b9adce}
+      \strng{authorfullhash}{96b09f488e180a5b744e1434de9dafdd}
+      \strng{authorfullhashraw}{96b09f488e180a5b744e1434de9dafdd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{<}strong class={"}journal-contentHeaderColor{"}{>}Abstract.{<}/strong{>} Data collected by two automatic weather stations (AWS) on the Larsen C ice shelf, Antarctica, between 22 January 2009 and 1 February 2011 are analyzed and used as input for a model that computes the surface energy budget (SEB), which includes melt energy. The two AWSs are separated by about 70 km in the north--south direction, and both the near-surface meteorology and the SEB show similarities, although small differences in all components (most notably the melt flux) can be seen. The impact of subsurface absorption of shortwave radiation on melt and snow temperature is significant, and discussed. In winter, longwave cooling of the surface is entirely compensated by a downward turbulent transport of sensible heat. In summer, the positive net radiative flux is compensated by melt, and quite frequently by upward turbulent diffusion of heat and moisture, leading to sublimation and weak convection over the ice shelf. The month of November 2010 is highlighted, when strong westerly flow over the Antarctic Peninsula led to a dry and warm föhn wind over the ice shelf, resulting in warm and sunny conditions. Under these conditions the increase in shortwave and sensible heat fluxes is larger than the decrease of net longwave and latent heat fluxes, providing energy for significant melt.{<}/p{>}}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{number}{2}
+      \field{title}{Near-surface climate and surface energy budget of Larsen C ice shelf, Antarctic Peninsula}
+      \field{volume}{6}
+      \field{year}{2012}
+      \field{pages}{353\bibrangedash 363}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.5194/tc-6-353-2012
+      \endverb
+      \verb{file}
+      \verb Kuipers Munneke, van den Broeke et al 2012 - Near-surface climate and surface energy:Attachments/Kuipers Munneke, van den Broeke et al 2012 - Near-surface climate and surface energy.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://tc.copernicus.org/articles/6/353/2012/
+      \endverb
+      \verb{url}
+      \verb https://tc.copernicus.org/articles/6/353/2012/
+      \endverb
+    \endentry
+    \entry{Pu.2021}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=1c6cae77d6e3d0d19b2d67425bd72f81}{%
+           family={Pu},
+           familyi={P\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5afd05205780d496adde6496e5c34ea}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Jiecan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0bea797865d202655551669cc78935c2}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Dongyou},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e16370a92edf22642bc96cb7675a8fcc}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Tenglong},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f532a47a63f16b583c4455dea6a8018e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66b4fa213b3eb843134c0bc7565fa964}{%
+           family={Xing},
+           familyi={X\bibinitperiod},
+           given={Yuxuan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d28cb9bb97e2d212e63c4ffa7ad4e552}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d3e23852937fa39b0e34246c4ecd1d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ffdd9b80ca98bb51efa4dd08b33302b8}
+      \strng{fullhash}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{fullhashraw}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{bibnamehash}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{authorbibnamehash}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{authornamehash}{ffdd9b80ca98bb51efa4dd08b33302b8}
+      \strng{authorfullhash}{ac8795ebaed64865ad5dae97c918a75e}
+      \strng{authorfullhashraw}{ac8795ebaed64865ad5dae97c918a75e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Wildfire events have recently shown a rapid increase in frequency and scale due to the warmer present-day climate; however, their potential effects on the cryosphere are difficult to assess. Catastrophic wildfires in Australia during 2019--2020 emitted large amounts of light-absorbing particles (LAPs) to the atmosphere. Satellite observations indicate that these LAPs caused unprecedented snow-darkening of glaciers in New Zealand through long-range transport and deposition, with their effects lasting for up to three months in January--March 2020, influencing {>}90{\%} of total glacier/snow and leading to a mean broadband snow-reflectance reduction of 0.08 $\pm$ 0.03. This snow darkening accelerated snowmelt by {\~}0.41 $\pm$ 0.2~cm day--1 during the southern summer, equivalent to that caused by a {\~}1.8°C increase in air temperature. This indicates the significant impact of the 2019--2020 Australian wildfires on the hydrologic cycle in New Zealand, exceeding that of the local climate warming of {\~}1.5°C since the preindustrial period. Wildfire-induced snow darkening is not limited to New Zealand. Future projections of wildfire incidence indicate widespread effects of snow darkening on the global cryosphere.}
+      \field{issn}{2667-3258}
+      \field{journaltitle}{Fundamental Research}
+      \field{number}{3}
+      \field{title}{Unprecedented snow darkening and melting in New Zealand due to 2019--2020 Australian wildfires}
+      \field{volume}{1}
+      \field{year}{2021}
+      \field{pages}{224\bibrangedash 231}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.fmre.2021.04.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2667325821000601
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2667325821000601
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
