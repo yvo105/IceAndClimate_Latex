@@ -1,0 +1,133 @@
+\documentclass{article}
+
+\input{0. Packages}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+
+\title{Ice \& Climate \\ \vspace{1em} \large Assignment 2: Simple Glacier Model \normalsize}
+\author{Yvo Werner\\ 9090649 } 
+\date{October 2024}
+
+\renewcommand{\arraystretch}{1.25}
+
+\hfuzz=200pt
+
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Discretisation of Equations}
+
+\subsection*{Discretization of Ice Flux (\( F \))}
+
+The ice flux is defined as:
+\begin{equation*}
+    F = H U
+\end{equation*}
+where \( H \) is the ice thickness and \( U \) is the ice velocity.
+The latter can be further decomposed into the deformation velocity $U_d$ and sliding velocity $U_s$:
+\begin{equation*}
+    U = U_d + U_s = \frac{2}{5} f_d H \tau_d^3 + f_s H^{-1} \tau_d^3
+\end{equation*}
+where $f_d$, $f_s$ are the deformation and sliding parameters and $\tau_d$ is the basal shear stress given by:
+\begin{equation*}
+    \tau_d = \rho g H \frac{\partial h}{\partial x}
+\end{equation*}
+with $\rho$ the ice density, $g$ the gravitational acceleration and $h$ the height of the ice above the reference surface.\\
+Before the equation can be discretised, it needs to be decided whether $F$ should be calculated at the grid points or at half points, i.e. between the grid points. 
+The given equation that determines the temporal evolution of the ice thickness $H$ (equation (1) of the assignment sheet) is essentially a mass conservation equation. 
+Thus, if we want to model $\frac{\partial H }{\partial t}$ at each grid point, it is necessary to make sure that mass is conserved between the grid cells.  \\
+$F$ describes the ice flux between the grid cells and thus occurrs at the boundary of each grid cell.
+The temporal evolution of the ice thickness, $\frac{\partial H }{\partial t}$, in turn depends on the spatial derivative of $F$ across these boundaries.
+It follows that $F$ must be computed at the interface of the grid cells, i.e. at half points or in other words by using a staggered grid.
+This ensures that the mass flux in and out of each of the grid points is correctly accounted for and also enhances numerical stability.\\
+In order to discretise the equations, we first approximate the spatial change in ice surface elevation  $\frac{\partial h}{\partial x}$ at the half point using the difference of the ice surface elevation at the previous grid point ($h_i$) and at the next grid point ($h_{i+1}$) and subsequently dividing it by the grid spacing ($\Delta x$).Thus we are assuming a linear change between grid points which can be formalised as:
+\begin{equation*}
+    \left( \frac{\partial h}{\partial x} \right)_{i+1/2} \approx \frac{h_{i+1} - h_i}{\Delta x}
+\end{equation*}
+We can similarly approximate $H_{i+1/2}$ by taking the average between two adjacent grid points, again assuming a linear trend between them:
+\begin{align*}
+    H_{i +1/2} \approx \frac{H_{i+1} - H_i}{2}
+\end{align*}
+Using both approximations, we can then discretise the basal shear stress at the half points:
+\begin{align*}
+    \left( \tau_d \right)_{i + 1/2} = \rho g H_{i+1/2} \frac{h_{i+1} - h_i}{\Delta x}
+\end{align*}
+Substituting this equation into the deformation and sliding velocities gives:
+\begin{align*}
+    \left( U_d \right)_{i+1/2} &= \frac{2}{5} f_d H_{i+1/2} \left( \rho g H_{i+1/2} \frac{h_{i+1} - h_i}{\Delta x} \right)^3 \\
+    \left( U_s \right)_{i+1/2} &= f_s H^{-1}_{i+1/2} \left( \rho g H_{i+1/2} \frac{h_{i+1} - h_i}{\Delta x}  \right)^3  
+\end{align*}
+Using $U=U_d + U_s$, we can then discretise the ice flux equation:
+\begin{align*}
+    F_{i+1/2} &= H_{i+1/2} \left( \left( U_d \right)_{i+1/2} + \left( U_s \right)_{i+1/2} \right) \\
+    &= H_{i+1/2} \left( \frac{2}{5} f_d H_{i+1/2} \left( \rho g H_{i+1/2} \frac{h_{i+1} - h_i}{\Delta x} \right)^3 + f_s H_{i+1/2}^{-1} \left( \rho g H_{i+1/2} \frac{h_{i+1} - h_i}{\Delta x} \right)^3 \right)\\
+    & \boxed{= H_{i+1/2} \left( \rho g H_{i+1/2} \frac{h_{i+1} - h_i}{\Delta x} \right)^3 \left( \frac{2}{5} f_d H_{i+1/2} + f_s H_{i+1/2}^{-1} \right)}
+\end{align*}
+
+
+\subsection*{Discretization of Temporal Ice Thickness Evolution (\( \partial H / \partial t \))}
+For this assignment, the Euler forward time stepping should be applied to the mass conservation equation:
+\begin{equation*}
+    \frac{\partial H}{\partial t} = -\frac{\partial F}{\partial x} + \dot{b}
+\end{equation*}
+where \( \dot{b} \) is the mass balance and $H$ and $F$ have already been introduced in the previous section.\\
+In general, the Euler forward scheme has the following form:
+\begin{align*}
+    f^{n+1} = f^{n} + \Delta t \frac{\partial f^n}{\partial t}
+\end{align*}
+which says that the value of the function at the next time step $f^{n+1}$ is given by the current value $f^{n}$ plus the temporal change of the function $\frac{\partial f^n}{\partial t}$ over the time interval $\Delta t$.
+The function that we want to approximate is the ice thickness $H$, so in analogy to the general form of the Euler forward scheme, we arrive at:
+\begin{align*}
+    H_{i}^{n+1} = H_{i}^{n} + \Delta t \frac{\partial H_{i}^{n}}{\partial t}
+\end{align*}
+where the subscript $i$ indicates the grid point.
+Using equation (1), we can substitute $\frac{\partial H}{\partial t}$ which gives:
+\begin{align*}
+    H_{i}^{n+1} = H_{i}^{n} + \Delta t \left( - \left(\frac{\partial F^{n}}{\partial x} \right)_{i} + \dot{b}^{n}_{i} \right)
+\end{align*}
+Next, the spatial derivative of $F$ is discretised by using a central difference scheme, analogous to how the spatial gradient of $h$ was approximated in the previous section, i.e. by assuming a linear trend between (half) grid points. 
+However, since $F$ is computed at half points, the indices need to be adjusted:
+\begin{align*}
+    \left( \frac{\partial F^{n}}{\partial x} \right)_{i} \approx \frac{F^{n}_{i+1/2} - F^{n}_{i-1/2}}{\Delta x}
+\end{align*}
+With this, we can construct the discretised version of equation (1):
+\begin{align*}
+    \boxed{H_{i}^{n+1} = H_{i}^{n} + \Delta t \left( -\frac{F^{n}_{i+1/2} - F^{n}_{i-1/2}}{\Delta x} +  \dot{b}^{n}_{i} \right)}
+\end{align*}
+
+
+\section{Research Question 9}
+
+% no-flux or no-ice boundary: No ice boundary chosen.
+Choosing the **no-ice boundary condition (False)** is suitable for research direction 9, which focuses on investigating the effect of excluding sliding on glacier shape for different conditions. Here's why:
+
+1. **Realistic Glacier Dynamics**: The no-ice boundary condition allows ice to flow in and out of the domain, which more accurately represents natural glacier dynamics. Since real glaciers typically end where the ice either melts or calves (in the case of marine-terminating glaciers), using a no-ice boundary will help simulate this natural progression more realistically. By excluding sliding, you are particularly interested in seeing how ice deformation alone impacts the glacier, especially at its terminus.
+
+2. **Impact on Glacier Length**: Excluding sliding is expected to impact glacier length significantly, as sliding usually contributes to extending the glacier further. The no-ice boundary allows for changes in glacier length by allowing ice to flow out at the terminus, meaning you can observe how the lack of sliding affects how much the glacier extends or retreats over time.
+
+3. **Boundary as a Control Variable**: If you were to choose the no-flux boundary, the glacier's behavior at the boundary would be artificially constrained, limiting its ability to adjust its length. For this research direction, you want to see the full effect of excluding sliding without imposing additional constraints that would confine the glacier's response to its internal deformation only.
+
+4. **Observing Glacier Response Time**: One of the key components of your study is analyzing how the glacier reaches a new equilibrium under various conditions, including the absence of sliding. The no-ice boundary allows the glacier to respond more dynamically, helping you better observe and calculate the response time, especially as ice flow at the terminus changes.
+
+Thus, using the **no-ice boundary** condition will help you better understand how excluding sliding affects the glacier's natural progression, length, and shape over time without artificially restricting the boundaries, leading to more insightful results in your analysis.
+
+
+% FLUX at grid points or at half points
+Reasoning see above.
+
+% Fs set to zero to test no sliding
+
+% \printbibliography
+
+
+
+\section*{Appendix}
+
+% \lstinputlisting[caption = {Python code, Data Analysis}, basicstyle = \tiny]{appendix/SEB_Code.py}
+
+\end{document}
